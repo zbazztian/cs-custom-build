@@ -33,12 +33,12 @@ jobs:
         languages: ${{ matrix.language }}
         # queries: security-extended,security-and-quality
 
-    - name: Autobuild
-      uses: github/codeql-action/autobuild@v2
+#    - name: Autobuild
+#      uses: github/codeql-action/autobuild@v2
 
-#    - run: |
-#        cd subdir/project/
-#        dotnet build
+    - run: |
+        cd subdir/project/
+        dotnet build
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
